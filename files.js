@@ -30,7 +30,9 @@ const fs = require('fs');
 //fs.renameSync('data.txt', 'file-system/data.txt');
 
 ////watch if a file changes, if changes then execute command
-fs.watchFile('file-system/data.txt', () =>
-{
-    console.log('data.txt has been changed')
-});
+// fs.watchFile('file-system/data.txt', () =>
+// {
+//     console.log('data.txt has been changed')
+// });
+
+fs.copyFileSync('encrypt.js', 'decrypt.js');

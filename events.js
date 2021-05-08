@@ -14,4 +14,5 @@ eventEmitter.on('userLoggedIn', () =>
     console.log(`There are ${usersLoggedIn} of users logged in`)
 })
 
+//creates that event
 eventEmitter.emit('userLoggedIn');

@@ -14,4 +14,5 @@ const os = require('os');
 //name of program running
 //console.log(__filename);
 
-console.log(process.env);
+//env in current computer
+//console.log(process.env);

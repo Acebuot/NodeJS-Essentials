@@ -28,3 +28,18 @@ dns.resolve('clubpenguin.com', (err,value) =>
     }
         console.log(value);
 });
+
+//mail exchange record to that domain
+//send an email to that domain which are the servers that handle that email request
+
+//supply an ip address, goes into dns system to look for any reverse dns records
+//usually there isn't but this is Google's publicly accessible dns resolver for dns requests
+dns.reverse('8.8.8.8', (err,value) =>
+{
+    if (err)
+    {
+        console.log(err);
+        return;
+    }
+        console.log(value);
+});
